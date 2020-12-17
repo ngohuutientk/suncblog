@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home - Nhà Cái Uy Tín Hàng Đầu Châu Á</title>
+
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" href="../../css/megaMenu.css" />
+    <link rel="stylesheet" th:href="@{/css/megaMenu.css}" href="../../css/megaMenu.css" />
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="../../css/style.css" />
+    <link rel="stylesheet" th:href="@{/css/js_composer.min.css}" href="../../css/js_composer.min.css" />
+    <link rel="stylesheet" th:href="@{/css/main.css}" href="../../css/main.css" />
+    <link rel="stylesheet" th:href="@{/css/custom.css}" href="../../css/custom.css" />
+    <script type="text/javascript" th:src="@{/js/jquery_1.12.4.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery-migrate.min.js}"></script>
+
+
+</head>
+<body class="home page-template-default page page-id-5592 wp-schema-pro-1.5.2 wpb-js-composer js-comp-ver-5.1.1 vc_responsive">
+    <div class="textwidget">
+        <div id="btn-Chat" class='helpcenterChina'>
+            <div class="tcenter toppart"><i class="sprite sprite-247"></i></div>
+            <div class="tcenter">
+                <button type="button" class="btnChat" onclick="if (!window.__cfRLUnblockHandlers) return false; if (!window.__cfRLUnblockHandlers) return false; PopupCenter('https://vue.livelyhelp.chat/chatWindow.aspx?siteId=233445&planId=d0010000-0000-0000-0000-008e00038fe5#', 'Live Chat', '640', '600');"
+                        style="border: none;" data-cf-modified-="">
+                    CHAT NOW
+                </button>
+            </div>
+            <div class="custService">
+                <a class="btnChatAnchor" href="http://m.me/fairgam" target="_blank"><i class="sprite sprite-facebook-s"></i><span class="yellowText">facebook</span></a>
+                <a class="btnChatAnchor"><i class="sprite sprite-phone"></i><span class="yellowText">(+63) 917 708 2008</span></a>
+                <a class="btnChatAnchor"><i class="sprite sprite-zalo"></i><span class="yellowText">(+63) 917 708 2008</span></a>
+                <a class="btnChatAnchor"><i class="sprite sprite-viber-s"></i><span class="yellowText">(+63) 917 708 2008</span></a>
+                <a class="btnChatAnchor" href="skype:live:cskh_195?call"><i class="sprite sprite-skype-s"></i><span class="yellowText"><span class="__cf_email__" data-cfemail="c5ada0a9b585a3a7fdfdeba6aaa8">[email&#160;protected]</span></span></a>
+                <a class="btnChatAnchor"><i class="sprite sprite-mail-s"></i><span class="yellowText"><span class="__cf_email__" data-cfemail="f79f929b87b79195cfcfd994989a">[email&#160;protected]</span></span></a>
+            </div>
+            <p id="btnCloseChat" class="navIcon"><i class="sprite sprite-hover-en"></i></p>
+        </div>
+    </div>
+
+    <div th:replace="fragments/header :: header"/>
+    <!--<div th:replace="fragments/slide :: slide"/>-->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img th:src="@{/resources/static/images/1.jpg}" alt="Los Angeles" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img th:src="@{/resources/static/images/2.jpg}" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img th:src="@{/resources/static/images/4.jpg}" alt="New york" style="width:100%;">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div th:replace="fragments/container :: container"/>
+    <div th:replace="fragments/footer :: footer"/>
+
+    <script type="text/javascript">
+            function PopupCenter(url, title, w, h) {
+                var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+                var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+                width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+                height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+                var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+                var top = ((height / 2) - (h / 2)) + dualScreenTop;
+                var newWindow = window.open(url, title, 'scrollbars=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+                // Puts focus on the newWindow
+                if (window.focus) {
+                    newWindow.focus();
+                }
+            }
+
+            jQuery.noConflict();
+            (function($) {
+                $(function() {
+                    $("#btnCloseChat").mouseover(function() {
+                        $("#btn-Chat").stop().animate({
+                            right: "0px"
+                        });
+                    }), $("#btn-Chat").mouseleave(function() {
+                        $("#btn-Chat").stop().animate({
+                            right: "-199px"
+                        });
+                    });
+                });
+                $('.this_close span').click(function() {
+                    $(".This_for_mobile").stop().animate({
+                        bottom: "-100%"
+                    });
+                });
+                $('.mob_Head').click(function() {
+                    $(".This_for_mobile").stop().animate({
+                        bottom: "0"
+                    });
+                });
+
+                $('.holder-gif > span').click(function() {
+                    $(".bottom_gif_banner").hide();
+                });
+
+            })(jQuery);
+    </script>
+
+    <link rel="stylesheet" th:href="@{/css/shortcodes.css}" href="../../css/shortcodes.css" />
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/megaMenu.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/custom.js}"></script>
+
+    <script type="text/javascript">
+            window.lazyLoadOptions = {
+                elements_selector: "img[data-lazy-src],.rocket-lazyload",
+                data_src: "lazy-src",
+                data_srcset: "lazy-srcset",
+                data_sizes: "lazy-sizes",
+                class_loading: "lazyloading",
+                class_loaded: "lazyloaded",
+                threshold: 300,
+                callback_loaded: function(element) {
+                    if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") {
+                        if (element.classList.contains("lazyloaded")) {
+                            if (typeof window.jQuery != "undefined") {
+                                if (jQuery.fn.fitVids) {
+                                    jQuery(element).parent().fitVids();
+                                }
+                            }
+                        }
+                    }
+                }
+            };
+            window.addEventListener('LazyLoad::Initialized', function(e) {
+                var lazyLoadInstance = e.detail.instance;
+
+                if (window.MutationObserver) {
+                    var observer = new MutationObserver(function(mutations) {
+                        var image_count = 0;
+                        var iframe_count = 0;
+                        var rocketlazy_count = 0;
+
+                        mutations.forEach(function(mutation) {
+                            for (i = 0; i < mutation.addedNodes.length; i++) {
+                                if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') {
+                                    return;
+                                }
+
+                                if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') {
+                                    return;
+                                }
+
+                                images = mutation.addedNodes[i].getElementsByTagName('img');
+                                is_image = mutation.addedNodes[i].tagName == "IMG";
+                                iframes = mutation.addedNodes[i].getElementsByTagName('iframe');
+                                is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
+                                rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');
+
+                                image_count += images.length;
+                                iframe_count += iframes.length;
+                                rocketlazy_count += rocket_lazy.length;
+
+                                if (is_image) {
+                                    image_count += 1;
+                                }
+
+                                if (is_iframe) {
+                                    iframe_count += 1;
+                                }
+                            }
+                        });
+
+                        if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) {
+                            lazyLoadInstance.update();
+                        }
+                    });
+
+                    var b = document.getElementsByTagName("body")[0];
+                    var config = {
+                        childList: true,
+                        subtree: true
+                    };
+
+                    observer.observe(b, config);
+                }
+            }, false);
+    </script>
+
+    <script data-no-minify="1" async th:src="@{/js/lazyload.min.js}" type="text/javascript"></script>
+    <script th:src="@{/js/rocket_loader.min.js}" data-cf-settings="|49" defer=""></script>
+
+
+</body>
+</html>
